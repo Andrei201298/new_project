@@ -1,10 +1,20 @@
 
-// alert('hello');
+const numberOfFilms = +prompt('How many movies did u watch already, Bob?', '') ;
 
-var a = 5,
-    b = 5;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-a--;
-b++;
+const a = prompt('last film u watchaed?',''),
+      b = prompt ('how good it was 0 - 10?', ''),
+      c = prompt('last film u watchaed?',''),
+      d = prompt('how good it was 0 - 10?', '');
 
-console.log(a, b);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
